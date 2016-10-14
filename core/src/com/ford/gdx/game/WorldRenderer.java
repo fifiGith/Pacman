@@ -22,7 +22,6 @@ public class WorldRenderer {
  
         pacmanImg = new Texture("pacman.png");
         
-        world = new World(pacmanGame);
         pacman = world.getPacman();
     }
 	

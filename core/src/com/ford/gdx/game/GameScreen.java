@@ -12,15 +12,15 @@ public class GameScreen extends ScreenAdapter {
 	private PacmanGame pacmanGame;
 	private Texture pacmanImg;
 	private Pacman pacman;
-	World world;
+	private World world;
 	private WorldRenderer worldRenderer;
 	 
     public GameScreen(PacmanGame pacmanGame) {
         this.pacmanGame = pacmanGame;
         pacmanImg = new Texture("pacman.png");
         world = new World(pacmanGame);
-        pacman = world.getPacman();
         worldRenderer = new WorldRenderer(pacmanGame, world);
+        pacman = world.getPacman();
     }
     
     private void update(float delta) {
