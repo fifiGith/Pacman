@@ -3,6 +3,7 @@ package com.ford.gdx.game;
 public class World {
 	private Pacman pacman;
 	private PacmanGame pacmanGame;
+	private Maze maze;
 	
 	World(PacmanGame pacmanGame) {
 		this.pacmanGame = pacmanGame;
@@ -12,4 +13,8 @@ public class World {
 	Pacman getPacman() {
 		return pacman;
 	}
+	
+    Maze getMaze() {
+        return maze;
+    }
 }
