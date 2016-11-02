@@ -8,6 +8,8 @@ public class World {
 	World(PacmanGame pacmanGame) {
 		this.pacmanGame = pacmanGame;
 		pacman = new Pacman(100, 100);
+		
+		 maze = new Maze();
 	}
 	
 	Pacman getPacman() {
